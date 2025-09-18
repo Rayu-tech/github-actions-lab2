@@ -1,6 +1,6 @@
 name: Installing Python
 
-on: [push]
+on: push
 
 jobs:
   build:
@@ -14,4 +14,4 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        ${{matrix.py-py-version}}
+        ${{matrix.py-version}}
